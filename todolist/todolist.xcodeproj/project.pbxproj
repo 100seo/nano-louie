@@ -13,7 +13,6 @@
 		A02A01BC2819AB2F00C91BA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02A01BB2819AB2F00C91BA4 /* Preview Assets.xcassets */; };
 		A07B7497281AD71D002C55E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B7496281AD71D002C55E3 /* ContentView.swift */; };
 		A07B749B281AE0BF002C55E3 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B749A281AE0BF002C55E3 /* CalendarView.swift */; };
-		A07B749F281BDB49002C55E3 /* CalendarGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B749E281BDB49002C55E3 /* CalendarGuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		A02A01BB2819AB2F00C91BA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A07B7496281AD71D002C55E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A07B749A281AE0BF002C55E3 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		A07B749E281BDB49002C55E3 /* CalendarGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				A07B7496281AD71D002C55E3 /* ContentView.swift */,
 				A02A01B62819AB2E00C91BA4 /* ListView.swift */,
 				A07B749A281AE0BF002C55E3 /* CalendarView.swift */,
-				A07B749E281BDB49002C55E3 /* CalendarGuideView.swift */,
 				A02A01B82819AB2F00C91BA4 /* Assets.xcassets */,
 				A02A01BA2819AB2F00C91BA4 /* Preview Content */,
 			);
@@ -148,7 +145,6 @@
 			files = (
 				A07B7497281AD71D002C55E3 /* ContentView.swift in Sources */,
 				A07B749B281AE0BF002C55E3 /* CalendarView.swift in Sources */,
-				A07B749F281BDB49002C55E3 /* CalendarGuideView.swift in Sources */,
 				A02A01B72819AB2E00C91BA4 /* ListView.swift in Sources */,
 				A02A01B52819AB2E00C91BA4 /* todolistApp.swift in Sources */,
 			);

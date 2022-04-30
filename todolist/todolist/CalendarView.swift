@@ -16,11 +16,11 @@ struct CalendarView: View {
     var body: some View {
         NavigationView{
             VStack {
-                Text("이번 달에는 총 \(MonthCount) 개의 할일을 끝냈어요🔥")
-                    .background(){
-                        Color.yellow
-                            .frame(width: 360, height: 25)
-                    }
+                Text("이번 달에는 총 \(MonthCount) 개의 할일을 끝냈어요")
+                    .font(.subheadline)
+                    .padding(.leading, 10)
+                    .frame(width: 360, height: 25, alignment: .leading)
+                    .background(RoundedRectangle(cornerRadius: 5).fill(Color.yellow))
                     .padding(.bottom, 60)
                 DatePicker("",selection: $date,displayedComponents: .date)
                     .datePickerStyle(.graphical)
@@ -37,7 +37,8 @@ struct CalendarView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink(
-                        destination: CalendarGuideView(),
+                        //추후 CalendarGuideView로 변경
+                        destination: EmptyView(),
                         label: {
                             Image(systemName: "info.circle")
                         })

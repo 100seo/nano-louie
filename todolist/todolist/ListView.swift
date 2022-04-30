@@ -22,13 +22,11 @@ struct ListView: View {
     var body: some View {
         NavigationView {
             VStack{
-                TextField("좋아하는 문구를 적어보세요!", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .font(.caption)
-                    .padding(.leading, 20.0)
-                    .background(){
-                        Color.yellow
-                            .frame(width: 360, height: 25)
-                    }
+                TextField("좋아하는 문구를 적어보세요!", text: .constant(""))
+                    .font(.subheadline)
+                    .padding(.leading, 10)
+                    .frame(width: 360, height: 25, alignment: .leading)
+                    .background(RoundedRectangle(cornerRadius: 5).fill(Color.yellow))
                 Rectangle()
                     .frame(width: 360, height: 260)
                 HStack{
@@ -55,11 +53,13 @@ struct ListView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink(
-                        destination: Text("여기에 도움말을 불러오면 됨"),
+                        //추후 ListGuideView로 변경
+                        destination: EmptyView(),
                         label: {
                             Image(systemName: "info.circle")
                         })
-                    EditButton()
+                    //EditButton()
+                    Spacer()
                 }
             }
         }

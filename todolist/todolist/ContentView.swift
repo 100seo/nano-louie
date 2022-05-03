@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
         TabView {
             ListView()
-                //.font(.system(size: 30))
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
+                .tabItem {Label("Home", systemImage: "house")}
                 .tag(0)
             CalendarView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Calendar")
-                }
+                .tabItem {Label("Calendar", systemImage : "calendar")}
                 .tag(1)
         }
     }

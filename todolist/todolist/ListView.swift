@@ -27,11 +27,12 @@ struct ListView: View {
                     .font(.subheadline)
                     .padding(.leading, 10)
                     .frame(width: 360, height: 25, alignment: .leading)
-                    .background(RoundedRectangle(cornerRadius: 5).fill(Color.yellow))
+                    .background(RoundedRectangle(cornerRadius: 5).fill(Color.pointColor))
                     .disableAutocorrection(true)
                 Rectangle()
-                    .frame(width: 360, height: 260)
+                    .frame(width: 360, height: 250)
                     .foregroundColor(.gray)
+                    .padding(.bottom, 10.0)
                 HStack{
                     Image(systemName: "plus")
                         .font(.system(size: 25))
@@ -40,8 +41,9 @@ struct ListView: View {
                     )
                     .padding(.leading, 10.0)
                     .frame(width: 340, height: 50)
-                    //.background(RoundedRectangle(cornerRadius: 3))
                 }
+                .background(RoundedRectangle(cornerRadius: 3).fill(Color.bgColor).padding(.horizontal))
+                
                 List {
                     ForEach(0..<todoList.count, id:\.self) { index in
                         HStack {
@@ -66,8 +68,7 @@ struct ListView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink(
-                        //추후 ListGuideView로 변경
-                        destination: EmptyView(),
+                        destination: GuideView(),
                         label: {
                             Image(systemName: "info.circle")
                         })

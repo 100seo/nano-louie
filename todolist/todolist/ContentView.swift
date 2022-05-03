@@ -9,11 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world")
-            .padding()
+        TabView {
+            ListView()
+                //.font(.system(size: 30))
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                .tag(0)
+            CalendarView()
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("Calendar")
+                }
+                .tag(1)
+        }
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

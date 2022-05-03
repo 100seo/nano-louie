@@ -13,13 +13,13 @@ struct ContentView: View {
             ListView()
                 //.font(.system(size: 30))
                 .tabItem {
-                    Label("홈", systemImage: "house")
+                    Label("Home", systemImage: "house")
                 }
                 .tag(0)
             CalendarView()
                 .tabItem {
                     Image(systemName: "calendar")
-                    Text("캘린더")
+                    Text("Calendar")
                 }
                 .tag(1)
         }

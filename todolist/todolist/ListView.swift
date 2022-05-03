@@ -17,7 +17,8 @@ struct ListView: View {
     }
     @State var toDoString:String = ""
     @State private var todoList = [TodoList]()
-    @State private var multiSelection = Set<UUID>()
+    @State var itemArray: [String] = []
+    @State private var checked = false
     
     var body: some View {
         NavigationView {
@@ -27,28 +28,40 @@ struct ListView: View {
                     .padding(.leading, 10)
                     .frame(width: 360, height: 25, alignment: .leading)
                     .background(RoundedRectangle(cornerRadius: 5).fill(Color.yellow))
+                    .disableAutocorrection(true)
                 Rectangle()
                     .frame(width: 360, height: 260)
+                    .foregroundColor(.gray)
                 HStack{
+                    Image(systemName: "plus")
+                        .font(.system(size: 25))
+                        .padding(.leading, 20)
                     TextField("enter new tasks", text: self.$toDoString, onCommit:{appendList()}
                     )
                     .padding(.leading, 10.0)
-                    .frame(width: 360, height: 50)
-                    .background(RoundedRectangle(cornerRadius: 3).fill(Color.gray))
+                    .frame(width: 340, height: 50)
+                    //.background(RoundedRectangle(cornerRadius: 3))
                 }
-                List(todoList, selection: $multiSelection){
-                    Text($0.content)
-                    
+                List {
+                    ForEach(0..<todoList.count, id:\.self) { index in
+                        HStack {
+                            Text("\(todoList[index].content)")
+                            Spacer()
+                            CheckBoxView(checked:$todoList[index].checked)
+                        }
+                    }
+                    .frame(height: 50)
                 }
-                
                 .listStyle(PlainListStyle())
-                //.onDelete(perform: removeList)
+                
+//                .onDelete(perform: { indexSet in
+//                    todoList.remove(at: indexSet)})
             }
             .navigationBarTitle("Home",displayMode: .inline)
             
             .toolbar{
                 ToolbarItem(placement: .principal){
-                    Text("홈")
+                    Text("Home")
                         .font(.headline)
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -58,8 +71,6 @@ struct ListView: View {
                         label: {
                             Image(systemName: "info.circle")
                         })
-                    //EditButton()
-                    Spacer()
                 }
             }
         }
@@ -73,6 +84,15 @@ struct ListView: View {
     func removeList(at offsets: IndexSet) {
         todoList.remove(atOffsets: offsets)
     }
+    func saveButton(){
+            saveItem()
+    }
+    func saveItem(){
+        itemArray.append(toDoString)
+        toDoString = ""
+    }
+    
+    
     
 }
 

@@ -17,7 +17,8 @@ struct ContentView: View {
             CalendarView()
                 .tabItem {Label("Calendar", systemImage : "calendar")}
                 .tag(1)
-        }
+                
+        }.accentColor(.tabColor)
     }
 }
 struct ContentView_Previews: PreviewProvider {

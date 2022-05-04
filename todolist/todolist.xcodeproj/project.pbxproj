@@ -17,6 +17,7 @@
 		A05E2DFB2820FC8E001C4458 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E2DFA2820FC8E001C4458 /* CheckBoxView.swift */; };
 		A07B7497281AD71D002C55E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B7496281AD71D002C55E3 /* ContentView.swift */; };
 		A07B749B281AE0BF002C55E3 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B749A281AE0BF002C55E3 /* CalendarView.swift */; };
+		A0D7EC78282246C500FE227C /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7EC77282246C500FE227C /* CharacterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A05E2DFA2820FC8E001C4458 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		A07B7496281AD71D002C55E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A07B749A281AE0BF002C55E3 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		A0D7EC77282246C500FE227C /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				A07B749A281AE0BF002C55E3 /* CalendarView.swift */,
 				A05E2DFA2820FC8E001C4458 /* CheckBoxView.swift */,
 				A03BFCB428217345000E1042 /* GuideView.swift */,
+				A0D7EC77282246C500FE227C /* CharacterView.swift */,
 				A02720E9281E7D7700D3068B /* Model */,
 				A02A01B82819AB2F00C91BA4 /* Assets.xcassets */,
 				A03BFCB6282175ED000E1042 /* AccentColor.xcassets */,
@@ -170,6 +173,7 @@
 				A07B7497281AD71D002C55E3 /* ContentView.swift in Sources */,
 				A07B749B281AE0BF002C55E3 /* CalendarView.swift in Sources */,
 				A02A01B72819AB2E00C91BA4 /* ListView.swift in Sources */,
+				A0D7EC78282246C500FE227C /* CharacterView.swift in Sources */,
 				A02A01B52819AB2E00C91BA4 /* todolistApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

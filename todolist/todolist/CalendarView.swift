@@ -43,7 +43,7 @@ struct CalendarView: View {
                         .frame(height: 80)
                         
                         //추후 CharacterView로 변경
-                        NavigationLink(destination: EmptyView()){
+                        NavigationLink(destination: CharacterView()){
     //                        Rectangle()
     //                            .frame(width: 30, height: 30)
                             Image(systemName: "tortoise")

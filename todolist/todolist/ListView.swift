@@ -28,7 +28,7 @@ struct ListView: View {
                     .padding(.leading, 10)
                     .frame(width: 360, height: 25, alignment: .leading)
                     .background(RoundedRectangle(cornerRadius: 5).fill(Color.pointColor))
-                    .disableAutocorrection(true)
+                    //.disableAutocorrection(true)
                 Rectangle()
                     .frame(width: 360, height: 250)
                     .foregroundColor(.gray)
@@ -52,10 +52,9 @@ struct ListView: View {
                             CheckBoxView(checked:$todoList[index].checked)
                         }
                     }
-                    .frame(height: 50)
+                    .frame(height: 47)
                 }
                 .listStyle(PlainListStyle())
-                
 //                .onDelete(perform: { indexSet in
 //                    todoList.remove(at: indexSet)})
             }
@@ -82,16 +81,16 @@ struct ListView: View {
         todoList.append(addList)
         toDoString = ""
     }
-    func removeList(at offsets: IndexSet) {
-        todoList.remove(atOffsets: offsets)
-    }
-    func saveButton(){
-            saveItem()
-    }
-    func saveItem(){
-        itemArray.append(toDoString)
-        toDoString = ""
-    }
+//    func removeList(at offsets: IndexSet) {
+//        todoList.remove(atOffsets: offsets)
+//    }
+//    func saveButton(){
+//            saveItem()
+//    }
+//    func saveItem(){
+//        itemArray.append(toDoString)
+//        toDoString = ""
+//    }
     
     
     

@@ -18,6 +18,8 @@
 		A07B7497281AD71D002C55E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B7496281AD71D002C55E3 /* ContentView.swift */; };
 		A07B749B281AE0BF002C55E3 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B749A281AE0BF002C55E3 /* CalendarView.swift */; };
 		A0D7EC78282246C500FE227C /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7EC77282246C500FE227C /* CharacterView.swift */; };
+		A0D7EC7A282267A500FE227C /* MonthlyPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7EC79282267A500FE227C /* MonthlyPlanView.swift */; };
+		A0D7EC7C282312CA00FE227C /* ArtImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D7EC7B282312CA00FE227C /* ArtImage.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		A07B7496281AD71D002C55E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A07B749A281AE0BF002C55E3 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A0D7EC77282246C500FE227C /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		A0D7EC79282267A500FE227C /* MonthlyPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPlanView.swift; sourceTree = "<group>"; };
+		A0D7EC7B282312CA00FE227C /* ArtImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ArtImage.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 				A05E2DFA2820FC8E001C4458 /* CheckBoxView.swift */,
 				A03BFCB428217345000E1042 /* GuideView.swift */,
 				A0D7EC77282246C500FE227C /* CharacterView.swift */,
+				A0D7EC79282267A500FE227C /* MonthlyPlanView.swift */,
 				A02720E9281E7D7700D3068B /* Model */,
 				A02A01B82819AB2F00C91BA4 /* Assets.xcassets */,
 				A03BFCB6282175ED000E1042 /* AccentColor.xcassets */,
+				A0D7EC7B282312CA00FE227C /* ArtImage.xcassets */,
 				A02A01BA2819AB2F00C91BA4 /* Preview Content */,
 			);
 			path = todolist;
@@ -157,6 +163,7 @@
 				A03BFCB7282175ED000E1042 /* AccentColor.xcassets in Resources */,
 				A02A01BC2819AB2F00C91BA4 /* Preview Assets.xcassets in Resources */,
 				A02A01B92819AB2F00C91BA4 /* Assets.xcassets in Resources */,
+				A0D7EC7C282312CA00FE227C /* ArtImage.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +180,7 @@
 				A07B7497281AD71D002C55E3 /* ContentView.swift in Sources */,
 				A07B749B281AE0BF002C55E3 /* CalendarView.swift in Sources */,
 				A02A01B72819AB2E00C91BA4 /* ListView.swift in Sources */,
+				A0D7EC7A282267A500FE227C /* MonthlyPlanView.swift in Sources */,
 				A0D7EC78282246C500FE227C /* CharacterView.swift in Sources */,
 				A02A01B52819AB2E00C91BA4 /* todolistApp.swift in Sources */,
 			);

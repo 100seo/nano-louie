@@ -67,7 +67,7 @@ struct GuideView: View {
                         Image(systemName: "flame.fill")
                             .font(.system(size: 60))
                             .padding(.bottom,30)
-                        Text("미션을 확인하고 \n 캐릭터 스토리를 수집해보세요!")
+                        Text("미션을 완료하고 \n 캐릭터 아트를 수집해보세요!")
                     }
                     .multilineTextAlignment(.center)
                 }
